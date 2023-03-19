@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Command;
 
 use App\Domain\RotatableInterface;
+use Symfony\Component\Console\Attribute\AsCommand;
 
 class RotateCommand implements CommandInterface
 {

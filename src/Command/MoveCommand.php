@@ -5,6 +5,7 @@ namespace App\Command;
 
 use App\Domain\MovableInterface;
 use App\Domain\Vector;
+use Symfony\Component\Console\Attribute\AsCommand;
 
 class MoveCommand implements CommandInterface
 {
