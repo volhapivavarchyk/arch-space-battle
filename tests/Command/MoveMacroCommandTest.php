@@ -4,15 +4,9 @@ declare(strict_types=1);
 
 namespace App\Tests\Command;
 
-use App\Command\BurnFuelCommand;
-use App\Command\CheckFuelCommand;
-use App\Command\MoveCommand;
 use App\Command\MoveMacroCommand;
 use App\Domain\ObjectInterface;
 use App\Domain\Vector;
-use App\Exception\CommandException;
-use App\Exception\BurnFuelException;
-use App\Exception\CheckFuelException;
 use Exception;
 use PHPUnit\Framework\TestCase;
 
