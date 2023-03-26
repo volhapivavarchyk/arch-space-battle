@@ -1,4 +1,6 @@
 {
+    "name": "vp/space-battle",
+    "description": "Architecture and design patterns. Space battle",
     "type": "project",
     "license": "proprietary",
     "minimum-stability": "stable",
