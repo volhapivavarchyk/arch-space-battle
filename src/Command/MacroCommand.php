@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Command;
 
-use Symfony\Component\Console\Attribute\AsCommand;
+use App\Exception\CommandException;
 
 class MacroCommand implements CommandInterface
 {
@@ -14,9 +14,12 @@ class MacroCommand implements CommandInterface
 
     public function execute()
     {
-        // TODO: Implement execute() method.
-        foreach ($this->commands as $command) {
-            $command->execute();
+        try {
+            foreach ($this->commands as $command) {
+                $command->execute();
+            }
+        } catch (\Exception $e) {
+            throw new CommandException($e->getMessage(), 1, $e);
         }
     }
 }

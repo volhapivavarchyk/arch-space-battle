@@ -20,6 +20,7 @@ class BurnFuelCommand implements CommandInterface
     public function execute(): void
     {
         $level = $this->fuelBurnable->getLevel() - $this->fuelBurnable->getVelocity();
+//        $level = $this->fuelBurnable->getLevel();
 
         if ($level < 0) {
             throw new BurnFuelException("The object has run out of fuel");
